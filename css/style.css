@@ -10,7 +10,7 @@ body {
     --heading-color: #212121;
     --text-color: #757575;
     --bg-color: #F5F4FA;
-    --footer-contacts-color:  rgba(255, 255, 255, 0.6)
+    --footer-contacts-color:  rgba(255, 255, 255, 0.6);
 }
 .list-style-none {
     list-style: none;
@@ -47,7 +47,6 @@ body {
 }
 .menu-item {
     display: inline;
-    padding: 50px;
 }
 .hero {
     background-color: var(--footer-color);
@@ -61,7 +60,7 @@ body {
     color: var(--main-color);
     text-align: center;
     padding: 200px 450px 30px;
-    text-transform: capitalize;
+    text-transform: uppercase;
 }
 .main-button {
     text-align: center;
@@ -73,6 +72,7 @@ body {
     cursor: pointer;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 700;
     line-height: 1.88;
@@ -92,7 +92,7 @@ body {
 .advantages-heading {
     font-size: 14px;
     font-weight: 700;
-    letter-spacing: 0.03;
+    letter-spacing: 0.03em;
     line-height: 1.17;
     text-transform: uppercase;
     color: var(--heading-color);
@@ -106,8 +106,12 @@ body {
 .project-gallery {
     display: inline;
 }
+.team-section {
+    background-color: var(--bg-color);
+}
 .team-member {
     display: inline-block;
+    background-color: var(--main-color);
     box-shadow: 0px 2px 1px 0px #00000033;
     box-shadow: 0px 1px 1px 0px #00000024;
     box-shadow: 0px 1px 3px 0px #0000001F;
@@ -125,6 +129,9 @@ body {
 .site-footer {
     background-color: var(--footer-color);
     display: block;
+}
+.footer-address {
+    font-style: normal;
 }
 .contacts {
     color: var(--footer-contacts-color);
@@ -147,6 +154,11 @@ body {
     padding: 6px 22px;
     margin: 8px;
     text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    line-height: 1.63;
 }
 .filter-button:hover, .filter-button:focus{
     color: var(--main-color);
@@ -169,7 +181,7 @@ body {
     letter-spacing: 0.03;
     font-weight: 400;
     text-align: center;
-    
+    color: var(--text-color);
 }
 
 .section-heading {
