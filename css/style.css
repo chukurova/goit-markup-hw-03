@@ -165,7 +165,8 @@ body {
     background-color: var(--bright-color);
 }
 .gallery-images {
-    display: inline;
+    display: inline-flex;
+    margin-right: 30px;
 }
 .gallery-heading {
     font-size: 18px;
