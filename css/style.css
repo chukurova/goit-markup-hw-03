@@ -11,6 +11,7 @@ body {
     --text-color: #757575;
     --bg-color: #F5F4FA;
     --footer-contacts-color:  rgba(255, 255, 255, 0.6);
+    --hover-color: #188CE8;
 }
 .list-style-none {
     list-style: none;
@@ -48,7 +49,6 @@ body {
 
 .hero {
     background-color: var(--footer-color);
-    min-height: 600px;
 }
 .hero-heading {
     font-weight: 900;
@@ -78,7 +78,7 @@ body {
     margin: auto;
 }
 .hero-button:hover, .hero-button:focus {
-    background-color: #188CE8;
+    background-color: var(--hover-color);
 }
 
 .visually-hidden {
@@ -183,6 +183,6 @@ body {
     font-size: 36px;
     font-weight: 1.17;
     font-weight: 700;
-    letter-spacing: 0.03;
+    letter-spacing: 0.03em;
     text-align: center;
 }
