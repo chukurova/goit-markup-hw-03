@@ -45,12 +45,10 @@ body {
 .contact-link {
     color: var(--text-color);
 }
-.menu-item {
-    display: inline;
-}
+
 .hero {
     background-color: var(--footer-color);
-    max-height: 600px;
+    min-height: 600px;
 }
 .hero-heading {
     font-weight: 900;
@@ -59,7 +57,6 @@ body {
     letter-spacing: 0.06em;
     color: var(--main-color);
     text-align: center;
-    padding: 200px 450px 30px;
     text-transform: uppercase;
 }
 .main-button {
@@ -83,12 +80,20 @@ body {
 .hero-button:hover, .hero-button:focus {
     background-color: #188CE8;
 }
-.hidden-heading {
-    visibility: hidden;
-}
-.advantages {
-    display: inline-block;
-}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+} 
+
 .advantages-heading {
     font-size: 14px;
     font-weight: 700;
@@ -100,17 +105,14 @@ body {
 .advantages-description {
     font-size: 14px;
     line-height: 1.71;
-    left: 0.03;
+    letter-spacing: 0.03em;
     color: var(--text-color);
 }
-.project-gallery {
-    display: inline;
-}
+
 .team-section {
     background-color: var(--bg-color);
 }
 .team-member {
-    display: inline-block;
     background-color: var(--main-color);
     box-shadow: 0px 2px 1px 0px #00000033;
     box-shadow: 0px 1px 1px 0px #00000024;
@@ -120,7 +122,7 @@ body {
     font-size: 16px;
     font-weight: 500;
     line-height: 1.17;
-    letter-spacing: 0.03;
+    letter-spacing: 0.03em;
     text-align: center;
 }
 .team-job {
@@ -128,7 +130,6 @@ body {
 }
 .site-footer {
     background-color: var(--footer-color);
-    display: block;
 }
 .footer-address {
     font-style: normal;
@@ -142,9 +143,7 @@ body {
 .map {
     color: var(--main-color);
 }
-.filter {
-    display: inline;
-}
+
 .filter-button {
     color: var(--heading-color);
     background-color: var(--bg-color);
@@ -152,7 +151,6 @@ body {
     border-radius: 5px;
     cursor: pointer;
     padding: 6px 22px;
-    margin: 8px;
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -164,21 +162,18 @@ body {
     color: var(--main-color);
     background-color: var(--bright-color);
 }
-.gallery-images {
-    display: inline-flex;
-    margin-right: 30px;
-}
+
 .gallery-heading {
     font-size: 18px;
     font-weight: 700;
     line-height: 2;
-    letter-spacing: 0.06;
+    letter-spacing: 0.06em;
     color: var(--heading-color);
 }
 .gallery-item-name {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.67;
-    letter-spacing: 0.03;
+    letter-spacing: 0.03em;
     font-weight: 400;
     color: var(--text-color);
 }
