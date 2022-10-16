@@ -11,21 +11,24 @@
     <title>Portfolio</title>
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="index.html" target="_parent" rel="noopener noreferrer nofollow" class="link-style-none nav-link"><span class="logo">Web</span><span class="logo-dark">Studio</span></a>
-      <ul class="list-style-none">
-        <li class="menu-item"><a href="index.html" target="_parent" class="link-style-none nav-link">Студія</a></li>
-        <li class="menu-item"><a href="portfolio.html" target="_parent" rel="noopener noreferrer nofollow" class="link-style-none nav-link">Портфоліо</a></li>
-        <li class="menu-item"><a href="#" class="link-style-none nav-link">Контакти</a></li>
+    <header>
+    <div class="container portfolio-header">
+      <nav>
+        <a href="index.html" target="_parent" rel="noopener noreferrer nofollow" class="link-style-none nav-link"><span class="logo">Web</span><span class="logo-dark">Studio</span></a>
+        <ul class="list-style-none nav-main">
+          <li class="menu-item"><a href="index.html" target="_parent" class="link-style-none nav-link">Студія</a></li>
+          <li class="menu-item"><a href="portfolio.html" target="_parent" rel="noopener noreferrer nofollow" class="link-style-none nav-link">Портфоліо</a></li>
+          <li class="menu-item"><a href="#" class="link-style-none nav-link">Контакти</a></li>
+        </ul>
+      </nav>
+      <ul class="list-style-none nav-main">
+        <li class="menu-item"><a href="mailto:info@devstudio.com" class="link-style-none contact-link">info@devstudio.com</a></li>
+        <li class="menu-item"><a href="tel:+380961111111" class="link-style-none contact-link">+38 096 111 11 11</a></li>
       </ul>
-    </nav>
-    <ul class="list-style-none">
-      <li class="menu-item"><a href="mailto:info@devstudio.com" class="link-style-none contact-link">info@devstudio.com</a></li>
-      <li class="menu-item"><a href="tel:+380961111111" class="link-style-none contact-link">+38 096 111 11 11</a></li>
-    </ul> 
-  </header>
-    <main class="gallery">
+    </div>
+    </header>
+    <main>
+      <div class="portfolio-container">
       <section>
         <h1 class="visually-hidden">Portfolio</h1>
         <ul class="gallery-nav list-style-none">
@@ -35,7 +38,7 @@
             <li class="filter"><button type="button" class="filter-button">Дизайн</button></li>
             <li class="filter"><button type="button" class="filter-button">Маркетинг</button></li>
         </ul>
-        <ul class="list-style-none">
+        <ul class="portfolio-nav list-style-none">
             <li class="gallery-images">
               <a href="#" class="link-style-none">
                 <img src="images/portfolio-1.jpg" alt="веб-сайт Технокряк" width="370">
@@ -100,17 +103,20 @@
               </a>
             </li>
         </ul>
-    </section>
+      </section>
+      </div>
     </main>
-    <footer class="site-footer">
-        <a href="#" class="link-style-none"><span class="logo">Web</span><span class="logo-light">Studio</span></a>
-        <address class="footer-address">
-          <ul class="list-style-none">
-            <li class="site-footer"><a href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_parent" rel="noopener noreferrer nofollow" class="link-style-none map">м. Київ, пр-т Лесі Українки, 26</a></li>
-            <li class="site-footer"><a href="mailto:info@example.com" class="link-style-none contacts">info@example.com</a></li>
-            <li class="site-footer"><a href="tel:+380991111111" class="link-style-none contacts">+38 099 111 11 11</a></li>
-          </ul>
-        </address>
-      </footer>
+    <footer>
+      <div class="container">
+      <a href="#" class="link-style-none"><span class="logo">Web</span><span class="logo-light">Studio</span></a>
+      <address class="footer-address">
+        <ul class="list-style-none site-footer">
+          <li class="footer-link"><a href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank" rel="noopener noreferrer nofollow" class="link-style-none map">м. Київ, пр-т Лесі Українки, 26</a></li>
+          <li class="footer-link"><a href="mailto:info@example.com" class="link-style-none contacts">info@example.com</a></li>
+          <li class="footer-link"><a href="tel:+380991111111" class="link-style-none contacts">+38 099 111 11 11</a></li>
+        </ul>
+      </address>
+    </div>
+    </footer>
 </body>
 </html>
