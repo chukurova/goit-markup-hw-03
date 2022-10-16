@@ -1,6 +1,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color: var(--main-color);
+    margin: 0;
 }
 :root {
     --footer-color: #2F303A;
@@ -70,7 +71,7 @@ nav {
     margin-right: 50px;
 }
 main>.container {
-    width: 1600px;
+    min-width: 1600px;
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -173,11 +174,10 @@ main>.container {
 }
 .team-section {
     background-color: var(--bg-color);
-    width: 1170px;
     display: flex;
     flex-direction: column;
-    width: 1600px;
-    margin: 0 auto;
+    min-width: 1600px;
+    margin: 0;
 }
 .team {
     display: flex;
@@ -205,7 +205,7 @@ main>.container {
 footer {
     background-color: var(--footer-color);
     min-width: 1600px;
-    margin-top: 0;
+    margin: 0;
 }
 footer>.container {
     display: flex;
