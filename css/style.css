@@ -214,6 +214,7 @@ footer {
 .footer-address {
     font-style: normal;
     width: 231px;
+    margin-top: 20px;
 }
 .contacts {
     color: var(--footer-contacts-color);
