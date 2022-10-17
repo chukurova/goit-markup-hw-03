@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -11,25 +12,25 @@
     <title>Portfolio</title>
 </head>
 <body>
-    <header>
-    <div class="container portfolio-header">
-      <nav>
+  <header>
+    <div class="container header-container">
         <a href="index.html" target="_parent" rel="noopener noreferrer nofollow" class="link-style-none nav-link"><span class="logo">Web</span><span class="logo-dark">Studio</span></a>
+        <nav>
+          <ul class="list-style-none nav-main">
+            <li class="menu-item"><a href="index.html" target="_parent" class="link-style-none nav-link">Студія</a></li>
+            <li class="menu-item"><a href="portfolio.html" target="_parent" rel="noopener noreferrer nofollow" class="link-style-none nav-link">Портфоліо</a></li>
+            <li class="menu-item"><a href="#" class="link-style-none nav-link">Контакти</a></li>
+          </ul>
+        </nav>
         <ul class="list-style-none nav-main">
-          <li class="menu-item"><a href="index.html" target="_parent" class="link-style-none nav-link">Студія</a></li>
-          <li class="menu-item"><a href="portfolio.html" target="_parent" rel="noopener noreferrer nofollow" class="link-style-none nav-link">Портфоліо</a></li>
-          <li class="menu-item"><a href="#" class="link-style-none nav-link">Контакти</a></li>
+          <li class="menu-item"><a href="mailto:info@devstudio.com" class="link-style-none contact-link">info@devstudio.com</a></li>
+          <li class="menu-item"><a href="tel:+380961111111" class="link-style-none contact-link">+38 096 111 11 11</a></li>
         </ul>
-      </nav>
-      <ul class="list-style-none nav-main">
-        <li class="menu-item"><a href="mailto:info@devstudio.com" class="link-style-none contact-link">info@devstudio.com</a></li>
-        <li class="menu-item"><a href="tel:+380961111111" class="link-style-none contact-link">+38 096 111 11 11</a></li>
-      </ul>
-    </div>
-    </header>
+  </div>
+  </header>
     <main>
-      <div class="portfolio-container">
-      <section>
+      <section class="portfolio">
+        <div class="container">
         <h1 class="visually-hidden">Portfolio</h1>
         <ul class="gallery-nav list-style-none">
             <li class="filter"><button type="button" class="filter-button">Усі</button></li>
@@ -103,20 +104,20 @@
               </a>
             </li>
         </ul>
-      </section>
       </div>
+      </section>
     </main>
     <footer>
-      <div class="container">
-      <a href="#" class="link-style-none"><span class="logo">Web</span><span class="logo-light">Studio</span></a>
-      <address class="footer-address">
-        <ul class="list-style-none site-footer">
-          <li class="footer-link"><a href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank" rel="noopener noreferrer nofollow" class="link-style-none map">м. Київ, пр-т Лесі Українки, 26</a></li>
-          <li class="footer-link"><a href="mailto:info@example.com" class="link-style-none contacts">info@example.com</a></li>
-          <li class="footer-link"><a href="tel:+380991111111" class="link-style-none contacts">+38 099 111 11 11</a></li>
-        </ul>
-      </address>
-    </div>
+      <div class="container footer-container">
+        <a href="#" class="link-style-none"><span class="logo">Web</span><span class="logo-light">Studio</span></a>
+        <address class="footer-address">
+          <ul class="list-style-none site-footer">
+            <li class="footer-link"><a href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank" rel="noopener noreferrer nofollow" class="link-style-none map">м. Київ, пр-т Лесі Українки, 26</a></li>
+            <li class="footer-link"><a href="mailto:info@example.com" class="link-style-none contacts">info@example.com</a></li>
+            <li class="footer-link"><a href="tel:+380991111111" class="link-style-none contacts">+38 099 111 11 11</a></li>
+          </ul>
+        </address>
+      </div>
     </footer>
 </body>
 </html>
