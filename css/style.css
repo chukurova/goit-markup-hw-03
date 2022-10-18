@@ -16,12 +16,17 @@ body {
     --header-border: #ECECEC;
     --img-border: #EEEEEE;
 }
-h1, h1, h3, h4, h5, h6, p, ul {
+h1, h1, h3, h4, h5, h6, p {
     margin: 0;
 }
 ul {
     margin: 0;
     padding: 0;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .list-style-none {
@@ -35,6 +40,15 @@ ul {
 }
 .nav-link {
     color: var(--heading-color);
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+.header-link {
+    color: var(--heading-color);
+}
+nav {
+    margin-right: 344px;
 }
 .logo {
     color: var(--bright-color);
@@ -47,7 +61,6 @@ ul {
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
     font-weight: 700;
-    margin-right: 93px;
 }
 .logo-light {
     color: var(--main-color);
@@ -64,19 +77,18 @@ ul {
     padding-right: 15px;
     margin: 0 auto;
 }
-.footer-container {
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
 .header-container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
+}
+.header-nav {
+    display: flex;
 }
 .nav-main {
     display: flex;
+    justify-content: flex-start;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 .menu-item:not(:last-child) {
     margin-right: 50px;
@@ -98,13 +110,10 @@ ul {
     max-width: 696px;
     margin: 0 auto 30px;
 }
-.main-button {
-    text-align: center;
-}
+
 .hero-button {
     color: var(--main-color);
     background-color: var(--bright-color);
-    border-color: transparent;
     cursor: pointer;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -115,6 +124,7 @@ ul {
     letter-spacing: 0.06em;
     display: block;
     margin: 0 auto;
+    padding: 10px 32px;
 }
 .hero-button:hover, .hero-button:focus {
     background-color: var(--hover-color);
@@ -154,18 +164,19 @@ ul {
     line-height: 1.17;
     text-transform: uppercase;
     color: var(--heading-color);
-    align-self: start;
+    margin-bottom: 10px;
+    align-self: flex-start;
 }
 .advantages-description {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--text-color);
-    align-self: auto;
+    align-self: flex-start;
 }
 .gallery {
     margin: 0 auto;
-    margin-bottom: 94px;
+    padding-bottom: 94px;
 }
 .gallery-list {
     display: flex;
@@ -173,7 +184,7 @@ ul {
     justify-content: space-between;
 }
 .project-gallery:not(:last-child) {
-    margin-right: 50px;
+    margin-right: 30px;
 }
 .team-section {
     background-color: var(--bg-color);
@@ -209,11 +220,12 @@ ul {
 
 footer {
     background-color: var(--footer-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .footer-address {
     font-style: normal;
-    width: 231px;
     margin-top: 20px;
 }
 .contacts {
@@ -221,34 +233,27 @@ footer {
 }
 .nav-link:hover, .nav-link:focus, .contact-link:hover, .contact-link:focus {
     color: var(--bright-color);
-
 }
-
 .map {
     color: var(--main-color);
     padding-bottom: 9px;
 }
 .footer-link:not(:last-child) {
-    margin-bottom: 6px;
-}
-.footer-link:first-child {
     margin-bottom: 9px;
 }
 .portfolio {
     display: flex;
-    flex-direction: column;
     padding-top: 94px;
     padding-bottom: 94px;
-    margin: 0 auto;
 }
 header {
     border-bottom: 1px solid var(--header-border);
 }
 .gallery-nav {
     display: flex;
-    justify-content:space-between;
-    width: 575px;
-    margin: 0 auto 34px;
+    margin-bottom: 50px;
+    gap: 8px;
+    justify-content: center;
 }
 .filter-button {
     color: var(--heading-color);
@@ -270,21 +275,17 @@ header {
 }
 .portfolio-nav {
     display: flex;
-    justify-content:space-between;
-    width: 1170px;
+    gap: 30px;
     flex-wrap: wrap;
-    margin: 0 auto;
 }
 .gallery-images {
-    width: 370px;
     margin-left: 0;
+}
+
+.gallery-border {
+    padding: 20px 24px;
     border: 1px solid var(--img-border);
-}
-.gallery-images:not(:nth-child(n+7)){
-    margin-bottom:30px;
-}
-.gallery-images:not(:nth-child(n*3)){
-    margin-right: 30px;
+    border-top: none;
 }
 .gallery-heading {
     font-size: 18px;
@@ -292,7 +293,7 @@ header {
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--heading-color);
-    margin: 20px auto 4px 24px;
+    margin-bottom: 4px;
 }
 .gallery-item-name {
     font-size: 16px;
@@ -300,7 +301,6 @@ header {
     letter-spacing: 0.03em;
     font-weight: 400;
     color: var(--text-color);
-    margin: 0 auto 20px 24px;
 }
 
 .section-heading {
@@ -311,4 +311,5 @@ header {
     letter-spacing: 0.03em;
     text-align: center;
     margin-top: 0;
+    margin-bottom: 50px;
 }
